@@ -28,11 +28,11 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
+        <header className="">
         </header>
         <div>
           <NavBar> </NavBar>
-         <Route exact path = "/" component = {Home} />
+          <Route exact path = "/" component = {Home} />
           <Route exact path = "/CoursesAndProjects" component = {CoursesAndProjects} />
           <Route exact path = "/WorkExpirience" component = {WorkExpirience} />
           <Route exact path = "/GoalsAndVision" component = {GoalsAndVision} />
