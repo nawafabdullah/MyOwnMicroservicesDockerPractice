@@ -1,6 +1,13 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import ContactMe from './ContactMe' 
+import CoursesAndProjects from './CoursesAndProjects'
+import GoalsAndVision from './GoalsAndVision'
+import WorkExpirience from './WorkExpirience'
+import {Route, Link} from "react-router-dom"
+import Home from './Home';
+import NavBar from './NavBar'
 
 class App extends React.Component {
   constructor(props) {
@@ -22,11 +29,15 @@ class App extends React.Component {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-        </p>
         </header>
+        <div>
+          <NavBar> </NavBar>
+         <Route exact path = "/" component = {Home} />
+          <Route exact path = "/CoursesAndProjects" component = {CoursesAndProjects} />
+          <Route exact path = "/WorkExpirience" component = {WorkExpirience} />
+          <Route exact path = "/GoalsAndVision" component = {GoalsAndVision} />
+          <Route exact path = "/ContactMe" component = {ContactMe} />
+        </div>
         <p>
           {this.state.apiResponse}
         </p>
