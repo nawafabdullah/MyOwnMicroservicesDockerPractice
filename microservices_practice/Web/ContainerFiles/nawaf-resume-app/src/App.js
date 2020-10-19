@@ -5,7 +5,7 @@ import ContactMe from './ContactMe';
 import CoursesAndProjects from './CoursesAndProjects';
 import GoalsAndVision from './GoalsAndVision';
 import WorkExpirience from './WorkExpirience';
-import {Route, Link} from "react-router-dom";
+import { Route, Link } from "react-router-dom";
 import Home from './Home';
 import NavBar from './NavBar';
 import styles from './appStyles.module.css';
@@ -29,21 +29,30 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <header className= {styles.headerStyle}>
-          <div> hhh</div>
+        <header className={styles.headerStyle}>
+          <NavBar />
         </header>
-        <div>
-        <NavBar> </NavBar>
-          <Route exact path = "/" component = {Home} />
-          <Route exact path = "/CoursesAndProjects" component = {CoursesAndProjects} />
-          <Route exact path = "/WorkExpirience" component = {WorkExpirience} />
-          <Route exact path = "/GoalsAndVision" component = {GoalsAndVision} />
-          <Route exact path = "/ContactMe" component = {ContactMe} />
+        <div className={styles.backgroundImage}>
+        <div className = 'className={styles.pageHeader}'>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/CoursesAndProjects" component={CoursesAndProjects} />
+          <Route exact path="/WorkExpirience" component={WorkExpirience} />
+          <Route exact path="/GoalsAndVision" component={GoalsAndVision} />
+          <Route exact path="/ContactMe" component={ContactMe} />
         </div>
-        <p>
-          {this.state.apiResponse}
-        </p>
+        
+          <div>
+            <p>
+              {this.state.apiResponse}
+            </p>
+          </div>
+
+
+        </div>
       </div>
+
+
+
     );
   }
 }

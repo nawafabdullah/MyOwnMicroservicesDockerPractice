@@ -1,14 +1,15 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import styles from './appStyles.module.css';
 
 function NavBar() {
     return (
-        <ul>
-            <li> <Link to="/"> Home </Link></li>
-            <li> <Link to="/CoursesAndProjects"> Courses And Projects </Link></li>
-            <li> <Link to="/WorkExpirience"> Work Expirience </Link></li>
-            <li> <Link to="/GoalsAndVision"> Goals And Vision </Link></li>
-            <li> <Link to="/ContactMe"> Contact Me </Link></li>
+        <ul className= {styles.listNoBullet}>
+            <li> <Link className= {styles.navBar} to="/"> Home </Link></li>
+            <li> <Link className= {styles.navBar} to="/CoursesAndProjects"> Courses And Projects </Link></li>
+            <li> <Link className= {styles.navBar} to="/WorkExpirience"> Work Expirience </Link></li>
+            <li> <Link className= {styles.navBar} to="/GoalsAndVision"> Goals And Vision </Link></li>
+            <li> <Link className= {styles.navBar} to="/ContactMe"> Contact Me </Link></li>
         </ul>
     );
 }

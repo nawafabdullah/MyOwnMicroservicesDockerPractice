@@ -22,4 +22,4 @@ INSERT INTO Clients VALUES (1, "Nawaf", "dummy@dummy.com");
 INSERT INTO Clients VALUES (2, "Mohanned", "test@test.com");
 INSERT INTO Clients VALUES (3, "Omar", "email@email.com");
 
-int a [6] = {1,2,3,4,5,6};
+/*int a [6] = {1,2,3,4,5,6};

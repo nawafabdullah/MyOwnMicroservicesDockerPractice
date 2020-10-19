@@ -1,17 +1,26 @@
 .headerStyle {
-    background-image: url('./web-images/header-image.jpg');
+    /*background-image: url('./web-images/header-image.jpg');
     
     /*height: 200px; /* You must set a specified height */
     
+    background-color: #484848;
     border-radius: 75%%;
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
     max-width: 100%;
     height: auto;
-    background-size: 800px;
+    background-clip: padding-box;
 
+    color: #484848;
+    
+    margin-left: 20%;
+    margin-right: 20%;
     /* opacity: 0.5; */
+}
+.pageHeader {
+    color:  #484848;
+    padding-left: 80%;
 }
 .backgroundImage {
     /*background-image: url("photographer.jpg"); /* The image used */
@@ -23,6 +32,36 @@
 }
 
 
-.NavBar {
-    background-color: ;
+.navBar {
+    color: white;
+    margin-left: 0%;
+    margin-right: 2%;
 }
+
+.navBar:hover{
+    background-color: white;
+    color: black;
+}
+.listNoBullet {
+    list-style-type: none;
+}
+
+.listNoBullet li {
+    display: inline;
+    color: white;
+    margin-left: 2%;
+    padding-right: 0%;
+}
+
+.backgroundImage {
+    background-image: url("./web-images/background-image.jpg");
+    opacity: 0.3;
+    /*transform: scaleX(-1);*/
+}
+
+
+/*
+.listNoBullet li a {
+    color: white;
+}
+*/ 
