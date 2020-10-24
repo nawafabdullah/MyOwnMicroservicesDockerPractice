@@ -1,0 +1,17 @@
+version: '3'
+services:
+    nawaf-resume-app:
+        build: 
+            ./nawaf-resume-app
+        container_name: 
+            web-container
+        ports:
+            "8123:8123"
+        links: 
+            NawafDB:NawafDB
+        depends_on:
+            NawafDB
+        enviroment: 
+            DATABASE_HOST = NawafDB
+    NawafDB:
+        build: ./DB_Setup

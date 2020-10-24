@@ -1,8 +1,9 @@
-FROM mysql
+FROM mysql:latest
 ENV MYSQL_ROOT_PASSWORD NawafPass
 ENV MYSQL_DATABASE NawafDB
 ENV MYSQL_USER NawafUser
 ENV MYSQL_PASSWORD NawafPass
+#ADD setup.sql /docker-entrypoint-initdb.d
 #EXPOSE 3306
 WORKDIR /home/
 #COPY ./ContainerFiles/ .

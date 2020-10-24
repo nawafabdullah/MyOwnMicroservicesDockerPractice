@@ -17,7 +17,7 @@ class App extends React.Component {
   }
 
   callAPI() {
-    fetch("http://localhost:8085/products")
+    fetch("http://localhost:8001/products")
       .then(res => res.text())
       .then(res => this.setState({ apiResponse: res }));
   }
@@ -30,7 +30,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <header className={styles.headerStyle}>
-          <NavBar />
+          <NavBar />  
         </header>
         <div className={styles.backgroundImage}>
         <div className = 'className={styles.pageHeader}'>
